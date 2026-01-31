@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Seu Mediador Ético (Java 25)
+  tempodado-backend:
+    build: ./backend
+    container_name: mediador-etico
+    networks:
+      - tempodado-net
+    ports:
+      - "8080:8080"
+
+  # A Interface do seu irmão (TS/React)
+  tempodado-frontend:
+    build: ./frontend
+    container_name: interface-cidadao
+    networks:
+      - tempodado-net
+    ports:
+      - "3000:3000"
+
+networks:
+  tempodado-net:
+    driver: bridge
