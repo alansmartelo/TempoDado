@@ -1,0 +1,5 @@
+com/tempodado/dominio/PermissaoAcesso.class
+com/tempodado/infraestrutura/DelegacaoDTO.class
+com/tempodado/casosdeuso/PermissaoAcessoService.class
+com/tempodado/infraestrutura/DelegacaoController.class
+com/tempodado/TempoDadoApplication.class
