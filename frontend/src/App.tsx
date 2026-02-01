@@ -1,17 +1,26 @@
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div style={{ backgroundColor: '#0d1117', color: '#00ff88', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'monospace' }}>
-      <div style={{ textAlign: 'center', border: '1px solid #00ff88', padding: '50px', position: 'relative' }}>
-        <h1>🛡️ TEMPO DADO</h1>
-        <p style={{ color: '#c9d1d9' }}>SISTEMA OPERACIONAL E SEGURO</p>
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%) rotate(-45deg)', fontSize: '3rem', color: 'rgba(255, 0, 0, 0.2)', whiteSpace: 'nowrap', pointerEvents: 'none' }}>
-          DR. ALAN MARTELO
-        </div>
-      </div>
+    <div style={{ 
+      backgroundColor: '#000', 
+      color: '#fff', 
+      height: '100vh', 
+      display: 'flex', 
+      flexDirection: 'column',
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      fontFamily: 'sans-serif' 
+    }}>
+      <h1 style={{ fontSize: '3rem', border: '5px solid white', padding: '20px' }}>
+        🛡️ SISTEMA ONLINE
+      </h1>
+      <h2 style={{ marginTop: '20px', color: 'red', fontWeight: 'bold' }}>
+        DR. ALAN SILVA
+      </h2>
+      <p style={{ color: '#555' }}>Se você está vendo isso, o React venceu!</p>
     </div>
   );
-}
+};
 
 export default App;
