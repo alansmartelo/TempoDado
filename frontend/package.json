@@ -1,11 +1,18 @@
 {
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.12.0",
-    "@react-pdf-viewer/default-layout": "^3.12.0",
-    "pdfjs-dist": "^3.4.120"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "pdfjs-dist": "3.4.120"
   },
-  "devDependencies": {
-    "@types/react": "^19.2.10",
-    "@types/react-dom": "^19.2.3"
+  "scripts": {
+    "start": "HOST=0.0.0.0 PORT=3000 react-scripts start",
+    "build": "react-scripts build"
   }
 }
